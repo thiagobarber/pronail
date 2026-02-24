@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="pt-BR" class="h-full">
+<html lang="en" class="h-full">
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pronail Complex - Ultimate Solution</title>
+  <title>ProNail Complex - Transform Your Nails Today</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,8 @@
     .font-body { font-family: 'Open Sans', sans-serif; }
     
     @keyframes pulse-glow {
-      0%, 100% { box-shadow: 0 0 20px rgba(255, 200, 0, 0.6); }
-      50% { box-shadow: 0 0 40px rgba(255, 200, 0, 0.9); }
+      0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.5); }
+      50% { box-shadow: 0 0 40px rgba(239, 68, 68, 0.8); }
     }
     
     .cta-button {
@@ -27,280 +27,283 @@
       50% { transform: scale(1.05); }
     }
     
-    .urgency-badge {
-      animation: countdown-pulse 1.5s ease-in-out infinite;
+    .countdown-box {
+      animation: countdown-pulse 1s ease-in-out infinite;
     }
     
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     
-    .product-float {
-      animation: float 3s ease-in-out infinite;
+    .animate-fade-in {
+      animation: fade-in-up 0.8s ease-out forwards;
     }
-
-    .gradient-headline {
-      background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
-    }
+    
+    .animate-delay-1 { animation-delay: 0.2s; opacity: 0; }
+    .animate-delay-2 { animation-delay: 0.4s; opacity: 0; }
+    .animate-delay-3 { animation-delay: 0.6s; opacity: 0; }
   </style>
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
- <body class="h-full font-body bg-gray-100 overflow-auto">
-  <div id="app-wrapper" class="w-full min-h-full flex flex-col"><!-- SEÇÃO 1: HEADLINE PRETA -->
-   <section class="gradient-headline py-8 md:py-12 px-4">
-    <div class="max-w-4xl mx-auto text-center"><!-- Badge de Urgência -->
-     <div class="urgency-badge inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
-      <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
-      </svg><span id="urgency-text">⚠️ LIMITED TIME OFFER - LAST UNITS AVAILABLE!</span>
-     </div><!-- Headline Principal -->
-     <h1 id="headline" class="font-headline text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-4">NO MORE SHAME AND DISCOMFORT!</h1><!-- Subheadline com Dor -->
-     <p id="subheadline" class="text-lg md:text-xl text-gray-300 mb-6 max-w-2xl mx-auto">Discover the scientific method that has already helped <span class="text-yellow-400 font-bold">thousands of people</span> eliminate nail fungus naturally and permanently</p><!-- Indicadores de Prova Social -->
-     <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-white">
-      <div class="flex items-center gap-2">
-       <div class="flex -space-x-2">
-        <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center text-xs">
-         👤
-        </div>
-        <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-xs">
-         👤
-        </div>
-        <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-xs">
-         👤
-        </div>
-       </div><span class="text-sm text-gray-300">+47.000 clientes</span>
+ <body class="h-full font-body bg-gray-50 overflow-auto">
+  <div class="w-full min-h-full flex flex-col"><!-- SECTION 1: HEADLINE - Black with Urgency -->
+   <section class="bg-black text-white py-8 px-4">
+    <div class="max-w-4xl mx-auto text-center"><!-- Urgency Timer -->
+     <div class="mb-6 animate-fade-in">
+      <div class="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider">
+       <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+       </svg><span>⚠️ WARNING: Limited Stock Available</span>
       </div>
-      <div class="flex items-center gap-1 text-yellow-400"><span>⭐⭐⭐⭐⭐</span> <span class="text-sm text-gray-300">4.9/5</span>
+     </div><!-- Main Headline - Pain Point -->
+     <h1 id="main-headline" class="font-headline text-4xl md:text-6xl lg:text-7xl leading-tight mb-4 animate-fade-in animate-delay-1">TIRED OF HIDING YOUR <span class="text-red-500">EMBARRASSING</span> NAIL FUNGUS?</h1><!-- Sub Headline - Gain -->
+     <p id="sub-headline" class="text-xl md:text-2xl text-gray-300 mb-6 animate-fade-in animate-delay-2">Discover the <span class="text-green-400 font-bold">Revolutionary Formula</span> That's Helping Thousands Restore Beautiful, Healthy Nails in Just Weeks!</p><!-- Countdown Timer -->
+     <div class="flex justify-center gap-3 mb-6 animate-fade-in animate-delay-3">
+      <div class="countdown-box bg-red-600 rounded-lg p-3 min-w-[70px]">
+       <div id="hours" class="text-3xl font-bold">
+        02
+       </div>
+       <div class="text-xs uppercase">
+        Hours
+       </div>
       </div>
-     </div><!-- Seta Animada -->
-     <div class="mt-8 animate-bounce">
-      <svg class="w-8 h-8 mx-auto text-yellow-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
+      <div class="countdown-box bg-red-600 rounded-lg p-3 min-w-[70px]">
+       <div id="minutes" class="text-3xl font-bold">
+        47
+       </div>
+       <div class="text-xs uppercase">
+        Minutes
+       </div>
+      </div>
+      <div class="countdown-box bg-red-600 rounded-lg p-3 min-w-[70px]">
+       <div id="seconds" class="text-3xl font-bold">
+        33
+       </div>
+       <div class="text-xs uppercase">
+        Seconds
+       </div>
+      </div>
+     </div>
+     <p class="text-red-400 font-semibold animate-pulse">🔥 87% of today's stock already SOLD OUT!</p>
+    </div>
+   </section><!-- SECTION 2: PRODUCT SHOWCASE - Teal Header -->
+   <section class="py-12 px-4" style="background: linear-gradient(180deg, #519AAA 0%, #3d7a87 100%);">
+    <div class="max-w-4xl mx-auto"><!-- Trust Badges -->
+     <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <div class="bg-white/20 backdrop-blur rounded-full px-4 py-2 flex items-center gap-2 text-white text-sm">
+       <svg class="w-5 h-5 text-green-300" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+       </svg> FDA Approved Facility
+      </div>
+      <div class="bg-white/20 backdrop-blur rounded-full px-4 py-2 flex items-center gap-2 text-white text-sm">
+       <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+       </svg> 4.9/5 Stars (12,847 Reviews)
+      </div>
+      <div class="bg-white/20 backdrop-blur rounded-full px-4 py-2 flex items-center gap-2 text-white text-sm">
+       <svg class="w-5 h-5 text-green-300" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+       </svg> 60-Day Money Back Guarantee
+      </div>
+     </div><!-- Product Image -->
+     <div class="bg-white rounded-3xl shadow-2xl p-8 mb-8 transform hover:scale-105 transition-transform duration-300"><img src="https://imgur.com/Z2rmyFO.png" alt="ProNail Complex - Revolutionary Nail Fungus Treatment" class="w-full max-w-md mx-auto rounded-2xl" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #519AAA, #3d7a87)'; this.style.minHeight='300px'; this.alt='ProNail Complex Product';">
+     </div><!-- Benefits List -->
+     <div class="grid md:grid-cols-3 gap-6 mb-8 text-white">
+      <div class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
+       <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+       </div>
+       <h3 class="font-bold text-xl mb-2">Fast Acting</h3>
+       <p class="text-white/80">See visible results in as little as 2 weeks</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
+       <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+       </div>
+       <h3 class="font-bold text-xl mb-2">100% Natural</h3>
+       <p class="text-white/80">No harmful chemicals or side effects</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
+       <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+       </div>
+       <h3 class="font-bold text-xl mb-2">Long Lasting</h3>
+       <p class="text-white/80">Permanent results with continued use</p>
+      </div>
+     </div><!-- CTA Button -->
+     <div class="text-center"><a href="https://pronailcomplex24.com/text.php?aff=thiagobarber" target="_blank" rel="noopener noreferrer" id="cta-button" class="cta-button inline-block bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold text-xl md:text-2xl px-12 py-5 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-110"> 👉 YES! I WANT BEAUTIFUL NAILS NOW! </a>
+      <p class="text-white/80 mt-4 text-sm">🔒 Secure Checkout | 💳 All Major Cards Accepted</p>
      </div>
     </div>
-   </section><!-- SEÇÃO 2: HEAD COM PRODUTO -->
-   <section id="product-section" class="py-10 md:py-16 px-4" style="background-color: #519AAA;">
-    <div class="max-w-4xl mx-auto"><!-- Título da Seção -->
-     <div class="text-center mb-8"><span class="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4"> ✨ SOLUÇÃO REVOLUCIONÁRIA </span>
-      <h2 id="product-title" class="font-headline text-3xl md:text-5xl text-white mb-2">PRONAIL COMPLEX</h2>
-      <p id="product-description" class="text-white/90 text-lg">Advanced Formula for Healthy Nails</p>
-     </div><!-- Container do Produto -->
-     <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-10 max-w-2xl mx-auto"><!-- Imagem do Produto -->
-      <div class="product-float mb-8">
-       <div class="relative"><!-- Glow Effect -->
-        <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-400 rounded-2xl blur-xl opacity-30"></div><!-- Real Product Image -->
-        <div class="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-4 flex items-center justify-center overflow-hidden"><img src="https://i.imgur.com/Z2rmyFO.jpg" alt="Pronail Complex Product" class="w-full h-auto max-w-sm rounded-xl shadow-lg object-cover" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='#e5e7eb'; this.alt='Product image unavailable';">
-        </div><!-- Badges -->
-        <div class="absolute -top-3 -right-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-         -40% OFF
+   </section><!-- SECTION 3: SOCIAL PROOF & URGENCY -->
+   <section class="bg-gray-900 text-white py-12 px-4">
+    <div class="max-w-4xl mx-auto"><!-- Testimonials -->
+     <h2 class="font-headline text-3xl md:text-4xl text-center mb-8">REAL PEOPLE, <span class="text-green-400">REAL RESULTS</span></h2>
+     <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div class="bg-gray-800 rounded-2xl p-6 border-l-4 border-green-500">
+       <div class="flex items-center gap-1 text-yellow-400 mb-3">
+        ⭐⭐⭐⭐⭐
+       </div>
+       <p class="text-gray-300 mb-4">"I was embarrassed to show my feet for YEARS. After just 3 weeks with ProNail, I'm finally wearing sandals again! This stuff actually works!"</p>
+       <p class="font-bold text-green-400">— Sarah M., Texas</p>
+       <p class="text-xs text-gray-500">Verified Purchase ✓</p>
+      </div>
+      <div class="bg-gray-800 rounded-2xl p-6 border-l-4 border-green-500">
+       <div class="flex items-center gap-1 text-yellow-400 mb-3">
+        ⭐⭐⭐⭐⭐
+       </div>
+       <p class="text-gray-300 mb-4">"I tried everything - prescription creams, home remedies, nothing worked. ProNail changed my life. My nails look better than they have in 10 years!"</p>
+       <p class="font-bold text-green-400">— Michael R., Florida</p>
+       <p class="text-xs text-gray-500">Verified Purchase ✓</p>
+      </div>
+     </div><!-- Final Urgency Push -->
+     <div class="bg-red-900/50 border-2 border-red-500 rounded-2xl p-8 text-center">
+      <div class="text-red-400 font-bold text-lg mb-2">
+       ⚠️ IMPORTANT WARNING ⚠️
+      </div>
+      <p class="text-xl md:text-2xl mb-4">Due to overwhelming demand, we can <span class="font-bold text-red-400">ONLY guarantee</span> this special pricing for the next:</p>
+      <div class="flex justify-center gap-3 mb-6">
+       <div class="bg-red-600 rounded-lg p-3 min-w-[70px]">
+        <div id="hours2" class="text-3xl font-bold">
+         02
+        </div>
+        <div class="text-xs uppercase">
+         Hours
         </div>
        </div>
-      </div><!-- Benefícios Rápidos -->
-      <div class="grid grid-cols-2 gap-3 mb-8 text-sm">
-       <div class="flex items-center gap-2 bg-green-50 p-3 rounded-lg"><span class="text-green-500 text-xl">✓</span> <span class="text-gray-700">100% Natural</span>
+       <div class="bg-red-600 rounded-lg p-3 min-w-[70px]">
+        <div id="minutes2" class="text-3xl font-bold">
+         47
+        </div>
+        <div class="text-xs uppercase">
+         Minutes
+        </div>
        </div>
-       <div class="flex items-center gap-2 bg-green-50 p-3 rounded-lg"><span class="text-green-500 text-xl">✓</span> <span class="text-gray-700">No Side Effects</span>
+       <div class="bg-red-600 rounded-lg p-3 min-w-[70px]">
+        <div id="seconds2" class="text-3xl font-bold">
+         33
+        </div>
+        <div class="text-xs uppercase">
+         Seconds
+        </div>
        </div>
-       <div class="flex items-center gap-2 bg-green-50 p-3 rounded-lg"><span class="text-green-500 text-xl">✓</span> <span class="text-gray-700">Results in 30 Days</span>
-       </div>
-       <div class="flex items-center gap-2 bg-green-50 p-3 rounded-lg"><span class="text-green-500 text-xl">✓</span> <span class="text-gray-700">60-Day Guarantee</span>
-       </div>
-      </div><!-- CTA Principal --> <a href="https://pronailcomplex24.com/text.php?aff=thiagobarber" target="_blank" rel="noopener noreferrer" class="block"> <button id="cta-button" class="cta-button w-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 hover:from-yellow-500 hover:via-yellow-600 hover:to-orange-600 text-black font-bold text-lg md:text-xl py-5 px-8 rounded-full transition-all duration-300 transform hover:scale-105"> <span class="flex items-center justify-center gap-2"> <span id="cta-text">🛒 QUERO UNHAS SAUDÁVEIS AGORA!</span> </span> </button> </a> <!-- Info de Segurança -->
-      <div class="flex items-center justify-center gap-4 mt-4 text-xs text-gray-500"><span class="flex items-center gap-1">
-        <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
-        </svg> Secure Purchase </span> <span class="flex items-center gap-1">
-        <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
-        </svg> Money-Back Guarantee </span>
-      </div><!-- Contador de Estoque -->
-      <div class="mt-6 bg-red-50 border border-red-200 rounded-lg p-4 text-center">
-       <p class="text-red-600 font-semibold text-sm">⚠️ Warning: Only <span class="font-bold text-lg">17 units</span> left in stock!</p>
       </div>
-     </div><!-- Segundo CTA -->
-     <div class="text-center mt-8"><a href="https://pronailcomplex24.com/text.php?aff=thiagobarber" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white font-semibold hover:underline"> <span>Click here to secure yours with discount</span>
-       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-       </svg></a>
+      <p class="text-gray-300 mb-6">After this timer expires, the price will increase to <span class="line-through text-red-400">$147</span></p><a href="https://pronailcomplex24.com/text.php?aff=thiagobarber" target="_blank" rel="noopener noreferrer" class="cta-button inline-block bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-bold text-xl md:text-2xl px-12 py-5 rounded-full uppercase tracking-wider transition-all duration-300 transform hover:scale-110"> 🛒 CLAIM MY DISCOUNT NOW → </a>
      </div>
     </div>
-   </section><!-- SEÇÃO 3: RODAPÉ -->
-   <footer class="bg-gray-900 text-gray-400 py-8 px-4">
-    <div class="max-w-4xl mx-auto"><!-- Informações Fiscais -->
-     <div class="text-center space-y-4"><!-- Logo/Nome -->
-      <p id="company-name" class="text-white font-semibold text-lg">Pronail Complex™</p><!-- Disclaimer -->
-      <div class="text-xs leading-relaxed max-w-2xl mx-auto">
-       <p class="mb-3"><strong class="text-gray-300">LEGAL DISCLAIMER:</strong> This product is not intended to diagnose, treat, cure or prevent any disease. Results may vary from person to person. The statements made about this product have not been evaluated by the FDA. Consult your doctor before beginning any supplementation.</p>
-       <p class="mb-3">This site is not part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is an independent trademark of FACEBOOK, Inc.</p>
-      </div><!-- Informações Fiscais Detalhadas -->
-      <div class="border-t border-gray-700 pt-4 mt-4">
-       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-        <div>
-         <p class="text-gray-500 uppercase tracking-wider mb-1">Distributor</p>
-         <p>Pronail Health LLC</p>
-        </div>
-        <div>
-         <p class="text-gray-500 uppercase tracking-wider mb-1">EIN</p>
-         <p>International Product</p>
-        </div>
-        <div>
-         <p class="text-gray-500 uppercase tracking-wider mb-1">Support</p>
-         <p>support@pronailcomplex.com</p>
-        </div>
-       </div>
-      </div><!-- Links Legais -->
-      <div class="flex flex-wrap justify-center gap-4 text-xs mt-4"><span class="hover:text-white cursor-pointer">Terms of Use</span> <span class="text-gray-600">|</span> <span class="hover:text-white cursor-pointer">Privacy Policy</span> <span class="text-gray-600">|</span> <span class="hover:text-white cursor-pointer">Refund Policy</span>
-      </div><!-- Copyright -->
-      <p class="text-xs text-gray-500 mt-4">© 2024 Pronail Complex. All rights reserved.</p><!-- Selos de Segurança -->
-      <div class="flex justify-center gap-4 mt-4">
-       <div class="bg-gray-800 px-3 py-2 rounded text-xs flex items-center gap-1">
-        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-        </svg><span>Secure Site</span>
-       </div>
-       <div class="bg-gray-800 px-3 py-2 rounded text-xs flex items-center gap-1">
-        <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewbox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg><span>60-Day Guarantee</span>
-       </div>
-      </div>
+   </section><!-- FOOTER -->
+   <footer class="bg-gray-950 text-gray-400 py-8 px-4 text-center text-sm">
+    <div class="max-w-4xl mx-auto">
+     <p id="company-name" class="mb-4 font-semibold text-gray-300">ProNail Complex™</p>
+     <div class="border-t border-gray-800 pt-6 space-y-3">
+      <p>© 2024 ProNail Complex. All Rights Reserved.</p>
+      <p>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+      <p>Individual results may vary. Consult your healthcare provider before starting any supplement program.</p>
+      <p class="text-xs">Contact: support@pronailcomplex.com | <a href="#" class="text-blue-400 hover:underline">Privacy Policy</a> | <a href="#" class="text-blue-400 hover:underline">Terms of Service</a> | <a href="#" class="text-blue-400 hover:underline">Refund Policy</a></p>
+      <p class="text-xs text-gray-500">This site is not a part of the Facebook website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
      </div>
     </div>
    </footer>
   </div>
   <script>
+    // Default configuration
     const defaultConfig = {
-      // Headline
-      headline_text: "NO MORE SHAME AND DISCOMFORT!",
-      subheadline_text: "Discover the scientific method that has already helped thousands of people eliminate nail fungus naturally and permanently",
-      
-      // Product
-      product_title: "PRONAIL COMPLEX",
-      product_description: "Advanced Formula for Healthy Nails",
-      cta_text: "🛒 GET HEALTHY NAILS NOW!",
-      
-      // Footer
-      company_name: "Pronail Complex™",
-      
-      // Colors
-      background_color: "#0a0a0a",
-      product_section_color: "#519AAA",
-      text_color: "#ffffff",
-      cta_color: "#f59e0b",
-      footer_color: "#111827",
-      
-      // Font
-      font_family: "Open Sans",
-      font_size: 16
+      main_headline: 'TIRED OF HIDING YOUR <span class="text-red-500">EMBARRASSING</span> NAIL FUNGUS?',
+      sub_headline: 'Discover the <span class="text-green-400 font-bold">Revolutionary Formula</span> That\'s Helping Thousands Restore Beautiful, Healthy Nails in Just Weeks!',
+      cta_text: '👉 YES! I WANT BEAUTIFUL NAILS NOW!',
+      company_name: 'ProNail Complex™',
+      background_color: '#000000',
+      header_color: '#519AAA',
+      text_color: '#ffffff',
+      cta_color: '#dc2626',
+      accent_color: '#22c55e'
     };
 
-    async function onConfigChange(config) {
-      const c = { ...defaultConfig, ...config };
+    // Countdown Timer
+    function startCountdown() {
+      let totalSeconds = 2 * 3600 + 47 * 60 + 33;
       
-      // Update headline
-      document.getElementById('headline').textContent = c.headline_text;
-      document.getElementById('subheadline').innerHTML = c.subheadline_text.replace(
-        'thousands of people',
-        '<span class="text-yellow-400 font-bold">thousands of people</span>'
-      );
-      
-      // Update product section
-      document.getElementById('product-title').textContent = c.product_title;
-      document.getElementById('product-description').textContent = c.product_description;
-      document.getElementById('cta-text').textContent = c.cta_text;
-      
-      // Update footer
-      document.getElementById('company-name').textContent = c.company_name;
-      
-      // Update colors
-      document.getElementById('product-section').style.backgroundColor = c.product_section_color;
-      
-      // Update font
-      const fontStack = `${c.font_family}, sans-serif`;
-      document.body.style.fontFamily = fontStack;
-      
-      // Update font size proportionally
-      const baseSize = c.font_size;
-      document.getElementById('headline').style.fontSize = '';
-      document.getElementById('subheadline').style.fontSize = `${baseSize * 1.25}px`;
-    }
-
-    function mapToCapabilities(config) {
-      const c = { ...defaultConfig, ...config };
-      
-      return {
-        recolorables: [
-          {
-            get: () => c.background_color,
-            set: (value) => {
-              c.background_color = value;
-              window.elementSdk.setConfig({ background_color: value });
-            }
-          },
-          {
-            get: () => c.product_section_color,
-            set: (value) => {
-              c.product_section_color = value;
-              window.elementSdk.setConfig({ product_section_color: value });
-            }
-          },
-          {
-            get: () => c.text_color,
-            set: (value) => {
-              c.text_color = value;
-              window.elementSdk.setConfig({ text_color: value });
-            }
-          },
-          {
-            get: () => c.cta_color,
-            set: (value) => {
-              c.cta_color = value;
-              window.elementSdk.setConfig({ cta_color: value });
-            }
-          },
-          {
-            get: () => c.footer_color,
-            set: (value) => {
-              c.footer_color = value;
-              window.elementSdk.setConfig({ footer_color: value });
-            }
-          }
-        ],
-        borderables: [],
-        fontEditable: {
-          get: () => c.font_family,
-          set: (value) => {
-            c.font_family = value;
-            window.elementSdk.setConfig({ font_family: value });
-          }
-        },
-        fontSizeable: {
-          get: () => c.font_size,
-          set: (value) => {
-            c.font_size = value;
-            window.elementSdk.setConfig({ font_size: value });
-          }
+      function updateDisplay() {
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+        
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        
+        document.getElementById('hours2').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes2').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds2').textContent = String(seconds).padStart(2, '0');
+        
+        if (totalSeconds > 0) {
+          totalSeconds--;
+          setTimeout(updateDisplay, 1000);
         }
-      };
+      }
+      
+      updateDisplay();
     }
+    
+    startCountdown();
 
-    function mapToEditPanelValues(config) {
-      const c = { ...defaultConfig, ...config };
-      return new Map([
-        ["headline_text", c.headline_text],
-        ["subheadline_text", c.subheadline_text],
-        ["product_title", c.product_title],
-        ["product_description", c.product_description],
-        ["cta_text", c.cta_text],
-        ["company_name", c.company_name]
-      ]);
-    }
-
-    // Initialize SDK
+    // Element SDK Integration
     if (window.elementSdk) {
       window.elementSdk.init({
         defaultConfig,
-        onConfigChange,
-        mapToCapabilities,
-        mapToEditPanelValues
+        onConfigChange: async (config) => {
+          const mainHeadline = document.getElementById('main-headline');
+          const subHeadline = document.getElementById('sub-headline');
+          const ctaButton = document.getElementById('cta-button');
+          const companyName = document.getElementById('company-name');
+          
+          if (mainHeadline) mainHeadline.innerHTML = config.main_headline || defaultConfig.main_headline;
+          if (subHeadline) subHeadline.innerHTML = config.sub_headline || defaultConfig.sub_headline;
+          if (ctaButton) ctaButton.textContent = config.cta_text || defaultConfig.cta_text;
+          if (companyName) companyName.textContent = config.company_name || defaultConfig.company_name;
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => { config.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+            },
+            {
+              get: () => config.header_color || defaultConfig.header_color,
+              set: (value) => { config.header_color = value; window.elementSdk.setConfig({ header_color: value }); }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => { config.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+            },
+            {
+              get: () => config.cta_color || defaultConfig.cta_color,
+              set: (value) => { config.cta_color = value; window.elementSdk.setConfig({ cta_color: value }); }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => { config.accent_color = value; window.elementSdk.setConfig({ accent_color: value }); }
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['main_headline', config.main_headline || defaultConfig.main_headline],
+          ['sub_headline', config.sub_headline || defaultConfig.sub_headline],
+          ['cta_text', config.cta_text || defaultConfig.cta_text],
+          ['company_name', config.company_name || defaultConfig.company_name]
+        ])
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d2e1e6851879ca9',t:'MTc3MTkyNzI1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d2e23ed16a99ca9',t:'MTc3MTkyNzQ4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
